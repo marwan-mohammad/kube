@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: shopfront
+  namespace: djshop
   labels:
     app: shopfront
 spec:
@@ -20,6 +21,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shopfront
+  namespace: djshop
 spec:
   replicas: 1
   selector:
